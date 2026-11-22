@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leaderboard — SiliconBench</title>
+  <meta name="description" content="SiliconBench v1.0 leaderboard: pass rates of AI agents on 94 chip engineering tasks.">
+  <meta property="og:title" content="Leaderboard — SiliconBench">
+  <meta property="og:description" content="SiliconBench v1.0 leaderboard: pass rates of AI agents on 94 chip engineering tasks.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#08080a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2308080a'/%3E%3Ccircle cx='16' cy='16' r='12.5' fill='none' stroke='%23d6b27a' stroke-width='1.4'/%3E%3Cg fill='%23d6b27a'%3E%3Crect x='10' y='10' width='5.2' height='5.2' rx='.6'/%3E%3Crect x='16.8' y='10' width='5.2' height='5.2' rx='.6' opacity='.6'/%3E%3Crect x='10' y='16.8' width='5.2' height='5.2' rx='.6' opacity='.6'/%3E%3Crect x='16.8' y='16.8' width='5.2' height='5.2' rx='.6' opacity='.3'/%3E%3C/g%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script src="../data/bundle.js" defer></script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body data-page="leaderboard" data-root="../">
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow reveal"><span class="dot"></span>SiliconBench v1.0 · Nov 2026</span>
+    <h1 class="display reveal d1">Leaderboard</h1>
+    <p class="lede reveal d2">All agents run the same 94 tasks with the same tools and time limit.</p>
+  </div>
+</header>
+
+<section class="wrap reveal">
+  <div class="table-wrap" id="lb-table"></div>
+  <p class="note">Pass rate: share of tasks where the submission passes all checks in the verifier. Tool calls: median per task. Hacking: runs that tried to bypass the grader; none succeeded.</p>
+</section>
+
+<section class="section tight">
+  <div class="wrap">
+    <div class="chart-card reveal">
+      <h3>Results by task</h3>
+      <p class="sub">Each column is one task, sorted from most to least solved. Click a cell to open the task.</p>
+      <div class="matrix" id="matrix"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" style="padding-top:0">
+  <div class="wrap grid-2">
+    <div class="reveal">
+      <h3 style="font:400 26px/1.2 var(--serif);letter-spacing:-.015em">How we grade</h3>
+      <p class="muted">The agent works offline with the repository, a specification and EDA tools. It never sees the grading tests. Only its editable files are copied into a separate verifier, which runs the private tests and checks.</p>
+    </div>
+    <div class="reveal d1">
+      <h3 style="font:400 26px/1.2 var(--serif);letter-spacing:-.015em">Anonymous repository</h3>
+      <p class="muted">The full 94-task benchmark, Harbor containers, and verification scripts are hosted in the anonymous review repository.</p>
+      <p style="margin-top:22px"><a class="btn" href="https://anonymous.4open.science/r/SiliconBench-v1-0-A37C" target="_blank" rel="noopener">Browse repository <span class="arr">→</span></a></p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

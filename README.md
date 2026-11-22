@@ -1,5 +1,7 @@
 # SiliconBench v1.0
 
+> **[Interactive Project Website →](https://anonymous.4open.science/w/SiliconBench-v1-0-A37C/)** · [Leaderboard](https://anonymous.4open.science/w/SiliconBench-v1-0-A37C/leaderboard/) · [Examples](https://anonymous.4open.science/w/SiliconBench-v1-0-A37C/examples/) · [Blog](https://anonymous.4open.science/w/SiliconBench-v1-0-A37C/blog/siliconbench-v1/)
+
 **SiliconBench v1.0** provides **94 hardware engineering tasks** curated from **30 open-source SystemVerilog repositories** in the standardized two-container **[Harbor](https://github.com/laude-institute/harbor)** format, built on a shared EDA base container (`siliconbench-eda:1.0`).
 
 ---
